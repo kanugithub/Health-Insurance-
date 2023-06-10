@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		
+	</body>
+<head>
+	<title>Login Page</title>
+	<style type="text/css">
+		body {
+			background-color:wheat;
+			background-image: url("j.jpg");
+			background-repeat: no-repeat;
+			
+			background-size: cover;
+			
+		}
+
+		.container {
+			margin: 0 auto;
+			max-width: 400px;
+			padding-top: 50px;
+			
+		}
+
+		.form {
+			background-color:teal;
+			padding: 30px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px #ccc;
+		}
+
+		.form h2 {
+			margin-top: 0;
+			margin-bottom: 30px;
+			text-align: center;
+			color:#ea7500;
+		}
+
+		.form input[type=text], .form input[type=password] {
+			display: block;
+			width: 94%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 3px;
+			background-color: #f2f2f2;
+			color:#ea7500;
+			font-size: 16px;
+		}
+
+		.form button[type=submit] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			background-color: #ea7500;
+			border: none;
+			border-radius: 3px;
+			color:white;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.form button[type=submit]:hover {
+			background-color: #3e8e41;
+		}
+
+		.form .error {
+			color: red;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1><center>Welcome</center></h1>
+	<div class="container">
+			<form class="form" action="login.jsp" method="POST">
+				<h2>Login</h2>
+				<div class="error"></div>
+				<label for="username">Username</label>
+				<input type="text" id="user name" name="name" required>
+				<label for="password">Password</label>
+				<input type="password" id="Password" name="pass" required>
+				<button type="submit">Login</button>
+			</form>
+		</div>
+</body>
+</html>
